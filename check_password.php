@@ -7,6 +7,7 @@
 </head>
 <body>
     <form action="check_password.php" method="post">
+        <h1>GUESS THE PASSWORD IT'S ACTUALLY EASY!</h1>
         <label for="password">Enter the password:</label>
         <input type="password" id="password" name="password" required>
         <button type="submit">Login</button>
@@ -22,8 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($entered_password == $expected_password) {
         header("Location: birthday_message.html");
         exit();
+    } else if{
+        echo "THINK AFROO THINK!!!";
     } else {
-        echo "Incorrect password. Try again.";
+        echo "SCAN YOUR BRAN AFRO!"
     }
 }
 ?>
